@@ -11,7 +11,7 @@ model = load_model('model.h5')
 # Function to generate predictions and visualize results
 def predict_and_plot(image):
     # Preprocess the image (assuming the model expects 224x224 RGB images)
-    image = tf.image.resize(image, [224, 224])
+    image = tf.image.resize((224, 224))
     # image = tf.expand_dims(image, axis=0)  # Add batch dimension
     image = image / 255.0  # Normalize
 
